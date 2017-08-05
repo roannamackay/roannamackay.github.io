@@ -1,7 +1,11 @@
+@import url("reset.css");
+@import url("nav.css");
+
+
 body{
 	padding: 0;
 	margin: 0;
-	background-color: #ffffff;
+	background-color: #f7f7f7;
 }
 
 h1{
@@ -10,48 +14,17 @@ h1{
 	color: #551a8b;
 }
 
-div.nav{
-	display: flex;
-	padding-bottom: 10px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #dddddd;
-	overflow: hidden;
-}
-
-li a{
-	display: inline;
-	float: left;
-    padding: 2px;
-	width: 24%;
-    text-align: center;
-    font-weight: bold;
-	font-size: 1.65em;
-	font: #cdf7f6;
-}
-
-div.nav a:link, a:visited{
-    text-decoration: none;
-}
-
-a.active {
-	background-color : #cdf7f6;
-}
 
 
 
 section{
-	background-color: #eeeeee;
+	background-color: #ededed;
 	height: 100%;
+    padding: 20px 0;
 }
 
 h2{
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: bold;
 	color: #551a8b;
 	text-align: center;
@@ -60,7 +33,9 @@ h2{
 }
 
 p{
-	padding: 5px;	
+	padding: 10px ;	
+    font-size: 1.3em;
+    text-align:center;
 }
 
 img#construc{

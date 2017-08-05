@@ -1,0 +1,149 @@
+/*header*/
+ 
+header {
+    background-color: #dddddd;
+    padding: 15px 20px;
+}
+ 
+        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+        header:before,
+        header:after {
+            content:"";
+            display:table;
+        }
+         
+        header:after {
+            clear:both;
+        }
+         
+        /* For IE 6/7 (trigger hasLayout) */
+        header {
+            zoom:1;
+        }
+        
+        
+h1.logo a {
+	color: #551a8b;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: 0.2em;
+}
+
+a.to_nav{
+    float: right;
+    color: #fff;
+    background-color: #dddddd;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+a.to_nav:hover,
+a.to_nav:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+div.nav{
+	display: flex;
+	padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    #padding: 0;
+    padding: 5px 0;
+   # width: 100%;
+    background-color: #dddddd;
+	overflow: hidden;
+}
+
+li a{
+	#display: inline;
+    display: block;
+	#float: left;
+    #padding: 2px;
+    padding: 0 20px;
+	#width: 24%;
+    text-transform: uppercase;
+    letter-spaceing: 0.1em;
+    line-height:2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+    text-align: center;
+    font-weight: bold;
+	#font-size: 1.65em;
+	font: #cdf7f6;
+}
+
+nav li:last-child a {
+    border-bottom: none;
+}
+
+
+nav li a {
+    text-decoration: none;
+    color: #551a8b;
+}
+
+a.active {
+	background-color : #cdf7f6;
+}
+
+#nav1 li a:hover,
+#nav1 li a:focus {
+    #color: #1c1c1c;
+    background: #ccc;
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    a.to_nav {
+        display: none;
+    }
+    
+    a.top{
+        display: none;
+    }
+    
+    .wrapper {
+        position: relative;
+        #width: 768px;
+        margin: auto;
+    }
+     
+    #nav1 {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #nav1 li {
+        display: inline;
+    }
+     
+    #nav1 li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+ 
+}
